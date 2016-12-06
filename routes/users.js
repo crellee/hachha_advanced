@@ -57,7 +57,7 @@ app.get('/users/:id', function(req, res) {
 
 // Route that handles creation of new user
 
-app.delete('/users', function(req, res) {
+app.delete('/users/:id', function(req, res) {
 
     MongoClient.connect(url, function(err, db) {
 
